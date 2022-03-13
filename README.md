@@ -1,9 +1,12 @@
 # Neural_Network_Charity_Analysis
 
-## Overview of the analysis:
-Explain the purpose of this analysis.
+## Overview
 
-## Results:
+### Purpose
+
+Beks is a data scientist and programmer for Alphabet Soup, a philanthropic organization that has funded multiple groups in the last 20 years focusing on humanitarian efforts. She has been asked to predict which organizations are too high-risk to donate for dontations and which ones are good candidates.  From Alphabet Soup’s business team, Beks received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years.  We will be helping Beks use the features in the provided dataset to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
+
+## Results
 Using bulleted lists and images to support your answers, address the following questions.
 
 ### Data Preprocessing
