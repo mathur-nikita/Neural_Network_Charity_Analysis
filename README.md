@@ -69,7 +69,7 @@ Three attempts were made to increase the performance of our model.
 The attempts made to increase model performance yielded similar accuracy results as the original model, but all attempts had lower loss.  Some recommendations for fututre attempts:
 
 1) We successfully binned the values in the APPLICATION_TYPE and CLASSIFICATION columns of our dataset, but we didn't attempt to bin any values in the ASK_AMT column which had the largest amount of unique values present.  Binning the ASK_AMT column values may help in model performance prior to standardizing the data.
-2) 
+2) A different model to use could be a Random Forest Model.  Random Forest Models, provided with the right amount of estimators, can provide similar results as a deep learning model in a fraction of the time.  This can help greatly in creating a model in less time with results we'd like.
 
 
 
