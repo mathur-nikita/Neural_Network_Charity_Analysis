@@ -29,10 +29,19 @@ As part of preprocessing the data, unique values for categorial variables (appli
 
 
 ### Compiling, Training, and Evaluating the Model
+
+For our target model performance, we want to hit an accuracy of 75%.  In all of our attempts, we were unable achieve the target model performance.
+
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?
-- Were you able to achieve the target model performance?
 - What steps did you take to try and increase model performance?
 
 
 ## Summary:
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+
+The attempts made to increase model performance yielded similar accuracy results as the original model, but all attempts had lower loss.  Some recommendations for fututre attempts:
+
+1) We successfully binned the values in the APPLICATION_TYPE and CLASSIFICATION columns of our dataset, but we didn't attempt to bin any values in the ASK_AMT column which had the largest amount of unique values present.  Binning the ASK_AMT column values may help in model performance prior to standardizing the data.
+2) 
+
+
+
