@@ -12,6 +12,12 @@ Beks is a data scientist and programmer for Alphabet Soup, a philanthropic organ
 
 As part of preprocessing the data, unique values for categorial variables (application types, classifications) were binned and transposed to numerical values via one-hot encoding.  The data was then standardized using Standard Scaler to reduce potential impacts of outliers and skewed data.
 
+Binning of APPLICATION_TYPE:                     
+![binning_application_type.JPG](https://github.com/mathur-nikita/Neural_Network_Charity_Analysis/blob/main/screenshots/binning_application_type.JPG)
+
+Binning of CLASSIFICATION:                        
+![binning_classification.JPG](https://github.com/mathur-nikita/Neural_Network_Charity_Analysis/blob/main/screenshots/binning_classification.JPG)
+
 - The variable considered to be the target for our model is IS_SUCCESSFUL. 
 - The variables considered to be the features for our model are:
   - APPLICATION_TYPE
@@ -27,14 +33,36 @@ As part of preprocessing the data, unique values for categorial variables (appli
   - EIN
   - NAME
 
-
 ### Compiling, Training, and Evaluating the Model
 
-For our target model performance, we want to hit an accuracy of 75%.  In all of our attempts, we were unable achieve the target model performance.
+For our target model performance, we want to hit an accuracy of 75%.  In all of our attempts, we were unable achieve the target model performance.  In the original model we used the following:
+- Number of layers: 2
+- Number of neurons: 80 in later one, 30 in layer 2
+- Activation functions: all layers used a rectified linear activation function (ReLU) except for the output layer, which used a sigmoid function.  The sigmoid function was chosen because it results in binary output, which is what we need for our model (i.e. is a chosen organization a good candidate for donations or not).
+![model_definition_original.JPG](https://github.com/mathur-nikita/Neural_Network_Charity_Analysis/blob/main/screenshots/model_definition_original.JPG)
 
-- How many neurons, layers, and activation functions did you select for your neural network model, and why?
-- What steps did you take to try and increase model performance?
+  The results of the original model:          
+  ![results_original_model.JPG](https://github.com/mathur-nikita/Neural_Network_Charity_Analysis/blob/main/screenshots/results_original_model.JPG)
 
+Three attempts were made to increase the performance of our model.
+
+1) Attempt 1 - added additional neurons to existing layers
+![model_definition_attempt_1.JPG](https://github.com/mathur-nikita/Neural_Network_Charity_Analysis/blob/main/screenshots/model_definition_attempt_1.JPG)
+
+  Results:                                       
+  ![results_optimized_model_attempt_1.JPG](https://github.com/mathur-nikita/Neural_Network_Charity_Analysis/blob/main/screenshots/results_optimized_model_attempt_1.JPG)
+
+2) Attempt 2 - added an additional hidden layer with 20 neurons
+![model_definition_attempt_2.JPG](https://github.com/mathur-nikita/Neural_Network_Charity_Analysis/blob/main/screenshots/model_definition_attempt_2.JPG)
+
+  Results:                                       
+  ![results_optimized_model_attempt_2.JPG](https://github.com/mathur-nikita/Neural_Network_Charity_Analysis/blob/main/screenshots/results_optimized_model_attempt_2.JPG)
+
+3) Attempt 3 - changed activation function for hidden layers
+![model_definition_attempt_3.JPG](https://github.com/mathur-nikita/Neural_Network_Charity_Analysis/blob/main/screenshots/model_definition_attempt_3.JPG)
+
+  Results:                                       
+  ![results_optimized_model_attempt_3.JPG](https://github.com/mathur-nikita/Neural_Network_Charity_Analysis/blob/main/screenshots/results_optimized_model_attempt_3.JPG)
 
 ## Summary:
 
